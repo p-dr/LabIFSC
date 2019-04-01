@@ -171,7 +171,7 @@ class Medida:
         return self.__div__(outro)
     
     def __mod__(self, outro):
-        pass
+        return self/outro - self//outro
     
     def __divmod__(self, outro):
         outro = self._torne_medida(outro, False)
